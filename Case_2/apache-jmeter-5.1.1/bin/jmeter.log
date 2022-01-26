@@ -1,39 +1,48 @@
-2022-01-26 08:17:32,681 INFO o.a.j.u.JMeterUtils: Setting Locale to tr_TR
-2022-01-26 08:17:32,711 INFO o.a.j.u.JMeterUtils: Could not find resources for 'tr_TR', using 'tr'
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: Loading user properties from: user.properties
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: Loading system properties from: system.properties
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: Version 5.1.1 r1855137
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: java.version=11.0.14
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: os.name=Windows 11
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: os.arch=amd64
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: os.version=10.0
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: file.encoding=Cp1254
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: java.awt.headless=null
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: Max memory     =4273995776
-2022-01-26 08:17:32,711 INFO o.a.j.JMeter: Available Processors =16
-2022-01-26 08:17:32,721 INFO o.a.j.JMeter: Default Locale=Türkçe (Türkiye)
-2022-01-26 08:17:32,721 INFO o.a.j.JMeter: JMeter  Locale=Türkçe (Türkiye)
-2022-01-26 08:17:32,721 INFO o.a.j.JMeter: JMeterHome=C:\Bootcamp\n11Case\Case_2\apache-jmeter-5.1.1
-2022-01-26 08:17:32,721 INFO o.a.j.JMeter: user.dir  =C:\Bootcamp\n11Case\Case_2\apache-jmeter-5.1.1\bin
-2022-01-26 08:17:32,721 INFO o.a.j.JMeter: PWD       =C:\Bootcamp\n11Case\Case_2\apache-jmeter-5.1.1\bin
-2022-01-26 08:17:32,721 INFO o.a.j.JMeter: IP: 192.168.1.4 Name: xcoder FullName: host.docker.internal
-2022-01-26 08:17:32,961 INFO o.a.j.g.a.LookAndFeelCommand: Installing Darcula LAF
-2022-01-26 08:17:32,961 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: com.bulenkov.darcula.DarculaLaf [Darcula]
-2022-01-26 08:17:32,961 INFO o.a.j.JMeter: Setting LAF to: com.bulenkov.darcula.DarculaLaf
-2022-01-26 08:17:33,021 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
-2022-01-26 08:17:34,307 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2022-01-26 08:17:34,307 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2022-01-26 08:17:34,307 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2022-01-26 08:17:34,307 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2022-01-26 08:17:34,307 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2022-01-26 08:17:34,307 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2022-01-26 08:17:34,647 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
-2022-01-26 08:17:34,647 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file C:\Bootcamp\n11Case\Case_2\apache-jmeter-5.1.1\bin\proxyserver.jks
-2022-01-26 08:17:34,747 INFO o.a.j.s.FileServer: Default base='C:\Bootcamp\n11Case\Case_2\apache-jmeter-5.1.1\bin'
-2022-01-26 08:17:35,167 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2022-01-26 08:17:35,167 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
-2022-01-26 08:17:35,167 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2022-01-26 08:17:35,167 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2022-01-26 08:17:35,177 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-01-26 06:14:09,293 INFO o.a.j.u.JMeterUtils: Setting Locale to tr_TR
+2022-01-26 06:14:09,323 INFO o.a.j.u.JMeterUtils: Could not find resources for 'tr_TR', using 'tr'
+2022-01-26 06:14:09,333 INFO o.a.j.JMeter: Loading user properties from: user.properties
+2022-01-26 06:14:09,333 INFO o.a.j.JMeter: Loading system properties from: system.properties
+2022-01-26 06:14:09,343 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2022-01-26 06:14:09,343 INFO o.a.j.JMeter: Version 5.1.1 r1855137
+2022-01-26 06:14:09,343 INFO o.a.j.JMeter: java.version=11.0.14
+2022-01-26 06:14:09,343 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2022-01-26 06:14:09,343 INFO o.a.j.JMeter: os.name=Windows 11
+2022-01-26 06:14:09,343 INFO o.a.j.JMeter: os.arch=amd64
+2022-01-26 06:14:09,343 INFO o.a.j.JMeter: os.version=10.0
+2022-01-26 06:14:09,343 INFO o.a.j.JMeter: file.encoding=Cp1254
+2022-01-26 06:14:09,343 INFO o.a.j.JMeter: java.awt.headless=null
+2022-01-26 06:14:09,343 INFO o.a.j.JMeter: Max memory     =4273995776
+2022-01-26 06:14:09,343 INFO o.a.j.JMeter: Available Processors =16
+2022-01-26 06:14:09,353 INFO o.a.j.JMeter: Default Locale=Türkçe (Türkiye)
+2022-01-26 06:14:09,353 INFO o.a.j.JMeter: JMeter  Locale=Türkçe (Türkiye)
+2022-01-26 06:14:09,353 INFO o.a.j.JMeter: JMeterHome=C:\Bootcamp\YASIN\apache-jmeter-5.1.1
+2022-01-26 06:14:09,353 INFO o.a.j.JMeter: user.dir  =C:\Bootcamp\YASIN\apache-jmeter-5.1.1\bin
+2022-01-26 06:14:09,353 INFO o.a.j.JMeter: PWD       =C:\Bootcamp\YASIN\apache-jmeter-5.1.1\bin
+2022-01-26 06:14:09,353 INFO o.a.j.JMeter: IP: 192.168.1.4 Name: xcoder FullName: host.docker.internal
+2022-01-26 06:14:09,593 INFO o.a.j.g.a.LookAndFeelCommand: Installing Darcula LAF
+2022-01-26 06:14:09,593 INFO o.a.j.g.a.LookAndFeelCommand: Using look and feel: com.bulenkov.darcula.DarculaLaf [Darcula]
+2022-01-26 06:14:09,593 INFO o.a.j.JMeter: Setting LAF to: com.bulenkov.darcula.DarculaLaf
+2022-01-26 06:14:09,653 INFO o.a.j.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties
+2022-01-26 06:14:11,053 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-01-26 06:14:11,053 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-01-26 06:14:11,053 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-01-26 06:14:11,053 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2022-01-26 06:14:11,053 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2022-01-26 06:14:11,053 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2022-01-26 06:14:11,573 INFO o.a.j.e.KeyToolUtils: keytool found at 'keytool'
+2022-01-26 06:14:11,573 INFO o.a.j.p.h.p.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file C:\Bootcamp\YASIN\apache-jmeter-5.1.1\bin\proxyserver.jks
+2022-01-26 06:14:11,703 INFO o.a.j.s.FileServer: Default base='C:\Bootcamp\YASIN\apache-jmeter-5.1.1\bin'
+2022-01-26 06:14:12,133 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2022-01-26 06:14:12,133 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2022-01-26 06:14:12,133 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2022-01-26 06:14:12,133 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2022-01-26 06:14:12,143 INFO o.a.j.v.ViewResultsFullVisualizer: Add JavaFX to your Java installation if you want to use renderer: org.apache.jmeter.visualizers.RenderInBrowser
+2022-01-26 06:14:13,953 INFO o.a.j.g.a.Load: Loading file: C:\Users\mypre\Downloads\N11Test-JMeter.jmx
+2022-01-26 06:14:13,953 INFO o.a.j.s.FileServer: Set new base='C:\Users\mypre\Downloads'
+2022-01-26 06:14:14,089 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2022-01-26 06:14:14,109 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2022-01-26 06:14:14,109 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2022-01-26 06:14:14,109 INFO o.a.j.s.SaveService: Loading file: C:\Users\mypre\Downloads\N11Test-JMeter.jmx
+2022-01-26 06:14:14,139 INFO o.a.j.p.h.c.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_
+2022-01-26 06:14:14,139 INFO o.a.j.p.h.c.CacheManager: Will only cache the following methods: [GET]
+2022-01-26 06:14:14,189 INFO o.a.j.s.FileServer: Set new base='C:\Users\mypre\Downloads'

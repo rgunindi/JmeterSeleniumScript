@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.3">
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1.1 r1855137">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -28,7 +28,7 @@
       <hashTree>
         <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop_Controller" enabled="true">
           <boolProp name="LoopController.continue_forever">true</boolProp>
-          <stringProp name="LoopController.loops">5</stringProp>
+          <stringProp name="LoopController.loops">15</stringProp>
         </LoopController>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
@@ -78,7 +78,7 @@ if(price&lt;100){
 clickElement(${__property(addBasketCss)});
 WDS.log.info(&quot;Urun Eklendi. Urun fiyati: &quot;+rawPrice);
 	}
-if(count==4){
+if(count==14){
 WDS.log.info(&quot;Odeme Adimina Geciliyor..&quot;);
 guestContinue();
 fillForm();
@@ -103,6 +103,7 @@ function enterValue(el,data){
 	(new org.openqa.selenium.support.ui.Select(WDS.browser.findElement(dom.By.cssSelector(el)))).selectByIndex(index);
 }
 function guestContinue(){
+waitCssElements(${__property(goToBasketCss)}); 
 clickElement(${__property(goToBasketCss)});
 waitCssElements(${__property(kvkkModalCss)}); 
 clickElement(${__property(kvkkModalCss)});
@@ -112,7 +113,7 @@ waitCssElements(${__property(continueGuestUser)});
 clickElement(${__property(continueGuestUser)});
 waitCssElements(${__property(guestMail)}); 
 enterValue(${__property(guestMail)},&quot;n11guestUser@sharklasers.com&quot;);
-clickElement(${__property(guestMailCheck)});
+clickElement(${__property(guestMailCheck)});java.lang.Thread.sleep(10000);//n11 captcha korumasi var ise devam edilemez.
 waitCssElements(${__property(fullName)}); 
 }
 function fillForm(){ 
@@ -238,12 +239,13 @@ ${__setProperty(securePay,&quot;#creditCardTabPanel &gt; div.creditCardField &gt
         <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
         <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
         <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
-        <stringProp name="ChromeDriverConfig.chromedriver_path">C:\Bootcamp\YASIN\chromedriver.exe</stringProp>
+        <stringProp name="ChromeDriverConfig.chromedriver_path">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir())}\chromedriver.exe</stringProp>
         <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
         <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
         <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
         <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
         <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
+        <stringProp name="TestPlan.comments">C:\Bootcamp\n11Case\Case_2</stringProp>
       </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
       <hashTree/>
     </hashTree>

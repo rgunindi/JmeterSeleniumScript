@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.1.1 r1855137">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop_Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="LoopController.loops">15</stringProp>
+        </LoopController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" enabled="true">
+              <collectionProp name="Arguments.arguments"/>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">www.n11.com</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">${url}</stringProp>
+            <stringProp name="HTTPSampler.method">GET</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Veri Kümesi Ayarı" enabled="true">
+            <stringProp name="delimiter"></stringProp>
+            <stringProp name="fileEncoding">UTF-8</stringProp>
+            <stringProp name="filename">C:/Bootcamp/YASIN/Urunler.csv</stringProp>
+            <boolProp name="ignoreFirstLine">true</boolProp>
+            <boolProp name="quotedData">true</boolProp>
+            <boolProp name="recycle">true</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+            <boolProp name="stopThread">false</boolProp>
+            <stringProp name="variableNames">url</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler guiclass="com.googlecode.jmeter.plugins.webdriver.sampler.gui.WebDriverSamplerGui" testclass="com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler" testname="jp@gc - WebDriver Sampler" enabled="true">
+            <stringProp name="WebDriverSampler.script">var dom = JavaImporter(org.openqa.selenium, org.openqa.selenium.support.ui)
+var support_ui = JavaImporter(org.openqa.selenium.support.ui.WebDriverWait);
+var wait = new dom.WebDriverWait(WDS.browser, 10);
+WDS.sampleResult.sampleStart();
+var count=${__jm__Loop_Controller__idx};
+var url=&quot;https://www.n11.com/&quot;+&apos;${url}&apos;;
+WDS.browser.get(url);
+var rawPrice=WDS.browser.findElement(dom.By.cssSelector(${__property(priceCss)})).getText().replace(&apos;.&apos;,&apos;&apos;);//Fiyati 1.000 ` in uzerinde olan urunlerden . yi cikarttik.
+var price=parseInt(rawPrice.substr(0,rawPrice.indexOf(&quot;,&quot;))); //virgulden oncesini aldik. ex: 10,08-&gt; 10
+waitCssElements(${__property(priceCss)});
+
+if(price&lt;100){
+clickElement(${__property(addBasketCss)});
+WDS.log.info(&quot;Urun Eklendi. Urun fiyati: &quot;+rawPrice);
+	}
+if(count==14){
+WDS.log.info(&quot;Odeme Adimina Geciliyor..&quot;);
+guestContinue();
+fillForm();
+paymentStep();
+}
+
+function waitCssElements(el) {
+    (wait.until(dom.ExpectedConditions.presenceOfElementLocated(dom.By.cssSelector(el))))
+    return true;
+}
+function clickElement(el){
+	(WDS.browser.findElement(dom.By.cssSelector(el)).click())
+    return true;
+	}
+
+function enterValue(el,data){
+	(WDS.browser.findElement(dom.By.cssSelector(el)).sendKeys([data]))
+    return true;
+	}
+	
+	function selectIndex(el,index){
+	(new org.openqa.selenium.support.ui.Select(WDS.browser.findElement(dom.By.cssSelector(el)))).selectByIndex(index);
+}
+function guestContinue(){
+waitCssElements(${__property(goToBasketCss)}); 
+clickElement(${__property(goToBasketCss)});
+waitCssElements(${__property(kvkkModalCss)}); 
+clickElement(${__property(kvkkModalCss)});
+waitCssElements(${__property(buyBtnCss)}); 
+clickElement(${__property(buyBtnCss)});
+waitCssElements(${__property(continueGuestUser)}); 
+clickElement(${__property(continueGuestUser)});
+waitCssElements(${__property(guestMail)}); 
+enterValue(${__property(guestMail)},&quot;n11guestUser@sharklasers.com&quot;);
+clickElement(${__property(guestMailCheck)});
+waitCssElements(${__property(fullName)}); 
+}
+function fillForm(){ 
+enterValue(${__property(fullName)},&quot;Ramazan g&quot;);
+selectIndex(${__property(cityId)},&apos;41&apos;);
+selectIndex(${__property(districtId)},&apos;17&apos;); 
+selectIndex(${__property(neighbourhoodId)},&apos;1&apos;);
+clickElement(${__property(gsm)});
+enterValue(${__property(gsm)},&quot;5530301001&quot;); 
+enterValue(${__property(shippingAddresstcNO)},&quot;16442922572&quot;); 
+enterValue(${__property(addressName)},&quot;Ev&quot;); 
+enterValue(${__property(addressDetail)},&quot;Izmir Karsiyaka R. G.&quot;); 
+java.lang.Thread.sleep(3000);
+	}
+function paymentStep(){
+clickElement(${__property(paymentBtn)});
+waitCssElements(${__property(acceptAggrement)});
+clickElement(${__property(acceptAggrement)});
+enterValue(${__property(cardBox1)},&quot;1357&quot;); 
+enterValue(${__property(cardBox2)},&quot;5317&quot;); 
+enterValue(${__property(cardBox3)},&quot;2549&quot;); 
+enterValue(${__property(cardBox4)},&quot;4793&quot;); 
+enterValue(${__property(cardOwnerName)},&quot;Ramazan GUNINDI&quot;); 
+selectIndex(${__property(expireMonth)},&apos;1&apos;); 
+selectIndex(${__property(expireYear)},&apos;1&apos;); 
+enterValue(${__property(securityCode)},&quot;991&quot;);  
+clickElement(${__property(securePay)});
+java.lang.Thread.sleep(3000);
+}</stringProp>
+            <stringProp name="WebDriverSampler.parameters"></stringProp>
+            <stringProp name="WebDriverSampler.language">javascript</stringProp>
+          </com.googlecode.jmeter.plugins.webdriver.sampler.WebDriverSampler>
+          <hashTree/>
+        </hashTree>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+          <boolProp name="ResultCollector.success_only_logging">true</boolProp>
+        </ResultCollector>
+        <hashTree/>
+        <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="BeanShell Assertion" enabled="true">
+          <stringProp name="BeanShellAssertion.query">${__setProperty(priceCss,&quot;#unf-p-id &gt; div &gt; div.unf-p-cvr &gt; div.unf-p-left.proDetailArea &gt; div.unf-p-lBox &gt; div.unf-p-detail &gt; div.unf-price-cover &gt; div.price-cover &gt; div.price &gt; div &gt; div &gt; ins&quot;)};
+${__setProperty(kvkkModalCss,&quot;#userKvkkModal &gt; div &gt; div.btnHolder &gt; span&quot;)};
+${__setProperty(addBasketCss,&quot;.addBasketUnify&quot;)};
+${__setProperty(goToBasketCss,&quot;#header &gt; div &gt; div &gt; div.hMedMenu &gt; div.customMenu &gt; div.myBasketHolder &gt; a&quot;)};
+${__setProperty(buyBtnCss,&quot;#js-buyBtn&quot;)};
+${__setProperty(continueGuestUser,&quot;#loginForm &gt; a&quot;)};
+${__setProperty(guestMail,&quot;#guestEmail&quot;)};
+${__setProperty(guestMailCheck,&quot;#js-guestEmailCheck&quot;)};
+${__setProperty(fullName,&quot;#fullName&quot;)};
+${__setProperty(cityId,&quot;#cityId&quot;)}; 
+${__setProperty(districtId,&quot;#districtId&quot;)};
+${__setProperty(neighbourhoodId,&quot;#neighbourhoodId&quot;)};
+${__setProperty(postalCode,&quot;#postalCode&quot;)};
+${__setProperty(addressDetail,&quot;#addressDetail&quot;)};
+${__setProperty(gsm,&quot;#gsm&quot;)};
+${__setProperty(shippingAddresstcNO,&quot;#shippingAddresstcNO&quot;)};
+${__setProperty(addressName,&quot;#addressName&quot;)};
+${__setProperty(paymentBtn,&quot;#js-goToPaymentBtn&quot;)}; 
+${__setProperty(acceptAggrement,&quot;#newCheckout &gt; div &gt; div &gt; div.right &gt; div &gt; section.box.box--small.orderSummaryBox &gt; div.contractField.guest &gt; div &gt; label&quot;)}; 
+${__setProperty(cardBox1,&quot;#creditCardTabPanel &gt; div.creditCardField &gt; div.formfield.cardNumberField &gt; input:nth-child(3)&quot;)}; 
+${__setProperty(cardBox2,&quot;#creditCardTabPanel &gt; div.creditCardField &gt; div.formfield.cardNumberField &gt; input:nth-child(4)&quot;)}; 
+${__setProperty(cardBox3,&quot;#creditCardTabPanel &gt; div.creditCardField &gt; div.formfield.cardNumberField &gt; input:nth-child(5)&quot;)}; 
+${__setProperty(cardBox4,&quot;#creditCardTabPanel &gt; div.creditCardField &gt; div.formfield.cardNumberField &gt; input:nth-child(6)&quot;)}; 
+${__setProperty(cardOwnerName,&quot;#cardOwnerName&quot;)};
+${__setProperty(expireMonth,&quot;#expireMonth&quot;)};
+${__setProperty(expireYear,&quot;#expireYear&quot;)};
+${__setProperty(securityCode,&quot;#securityCode&quot;)};
+${__setProperty(paymentCreditBtn,&quot;#js-paymentBtn&quot;)};
+${__setProperty(paymentCreditBtn,&quot;#js-paymentBtn&quot;)};
+${__setProperty(securePay,&quot;#creditCardTabPanel &gt; div.creditCardField &gt; div.optionsField.formfield.securePayCbField &gt; label&quot;)};</stringProp>
+          <stringProp name="BeanShellAssertion.filename"></stringProp>
+          <stringProp name="BeanShellAssertion.parameters"></stringProp>
+          <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+        </BeanShellAssertion>
+        <hashTree/>
+      </hashTree>
+      <com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig guiclass="com.googlecode.jmeter.plugins.webdriver.config.gui.ChromeDriverConfigGui" testclass="com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig" testname="jp@gc - Chrome Driver Config" enabled="true">
+        <stringProp name="WebDriverConfig.proxy_type">SYSTEM</stringProp>
+        <stringProp name="WebDriverConfig.proxy_pac_url"></stringProp>
+        <stringProp name="WebDriverConfig.http_host"></stringProp>
+        <intProp name="WebDriverConfig.http_port">8080</intProp>
+        <boolProp name="WebDriverConfig.use_http_for_all_protocols">true</boolProp>
+        <stringProp name="WebDriverConfig.https_host"></stringProp>
+        <intProp name="WebDriverConfig.https_port">8080</intProp>
+        <stringProp name="WebDriverConfig.ftp_host"></stringProp>
+        <intProp name="WebDriverConfig.ftp_port">8080</intProp>
+        <stringProp name="WebDriverConfig.socks_host"></stringProp>
+        <intProp name="WebDriverConfig.socks_port">8080</intProp>
+        <stringProp name="WebDriverConfig.no_proxy">localhost</stringProp>
+        <boolProp name="WebDriverConfig.maximize_browser">true</boolProp>
+        <boolProp name="WebDriverConfig.reset_per_iteration">false</boolProp>
+        <boolProp name="WebDriverConfig.dev_mode">false</boolProp>
+        <stringProp name="ChromeDriverConfig.chromedriver_path">${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir())}\chromedriver.exe</stringProp>
+        <boolProp name="ChromeDriverConfig.android_enabled">false</boolProp>
+        <boolProp name="ChromeDriverConfig.headless_enabled">false</boolProp>
+        <boolProp name="ChromeDriverConfig.insecurecerts_enabled">false</boolProp>
+        <boolProp name="ChromeDriverConfig.incognito_enabled">false</boolProp>
+        <boolProp name="ChromeDriverConfig.no_sandbox_enabled">false</boolProp>
+        <stringProp name="TestPlan.comments">C:\Bootcamp\n11Case\Case_2</stringProp>
+      </com.googlecode.jmeter.plugins.webdriver.config.ChromeDriverConfig>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
