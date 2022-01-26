@@ -1,0 +1,1 @@
+${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir())}\chromedriver.exe
