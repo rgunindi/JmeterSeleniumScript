@@ -9,3 +9,11 @@ Dinamik dosya yolunu alan path kodu:
 ```
 ${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir())}
 ```
+
+---
+> **NOTE**
+
+Testler çalıştırılırken dikkat edilmesi gereken bir husus vardır: 
+Guest user olarak aynı IP adresinden çok sayıda hatalı ödeme işlemi yapılmaya çalışıldığında, n11 güvenlik sebebiyle <ins>Captcha sistemini otomatik olarak devreye aldığından ödeme adımlarının test işlemleri tamamlanamayacaktır.</ins> 
+
+---
