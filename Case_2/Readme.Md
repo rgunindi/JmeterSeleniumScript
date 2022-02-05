@@ -17,3 +17,7 @@ Testler çalıştırılırken dikkat edilmesi gereken bir husus vardır:
 Guest user olarak aynı IP adresinden çok sayıda hatalı ödeme işlemi yapılmaya çalışıldığında, n11 güvenlik sebebiyle <ins>Captcha sistemini otomatik olarak devreye aldığından ödeme adımlarının test işlemleri tamamlanamayacaktır.</ins> 
 
 ---
+
+<b>Versiyon Bilgisi</b>
+
+Projede kullanılan ve Case2 de bulunan driver: <i>97.0.4692.71 chromedriver</i> sürümüdür.
