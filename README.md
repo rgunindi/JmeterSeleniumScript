@@ -1,4 +1,4 @@
-# n11CaseandJmeter
+Jmeter
 ## Project directory structure
 ### Case_1 Directory Structure
 
