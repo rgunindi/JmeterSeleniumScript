@@ -1,11 +1,10 @@
 ## Case 2 Jmeter
 
 ```diff
-- Projemizde chromedriver.exe dosya yolu ve Urunler.csv dosya yolu dinamik olarak BaseDir() methodu ile alinmaktadir. 
-- Bu yuzden chromedriver.exe ve Urunler.csv dosyalari urunScript.jmx dosyasi ile ayni klasorde bulunmalidir. 
+- In our project, the chromedriver.exe file path and the Product.csv file path are dynamically retrieved with the BaseDir() method. 
+- Therefore, chromedriver.exe and Products.csv files should be in the same folder as the productScript.jmx file.
 ```
-Dinamik dosya yolunu alan path kodu:
-
+Path code that takes dynamic file path:
 ```
 ${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileServer().getBaseDir())}
 ```
@@ -13,11 +12,11 @@ ${__BeanShell(import org.apache.jmeter.services.FileServer; FileServer.getFileSe
 ---
 > **NOTE**
 
-Testler çalıştırılırken dikkat edilmesi gereken bir husus vardır: 
-Guest user olarak aynı IP adresinden çok sayıda hatalı ödeme işlemi yapılmaya çalışıldığında, n11 güvenlik sebebiyle <ins>Captcha sistemini otomatik olarak devreye aldığından ödeme adımlarının test işlemleri tamamlanamayacaktır.</ins> 
+There is one thing to consider when running tests:
+When trying to make a large number of incorrect payment transactions from the same IP address as a guest user, the test process of the payment steps will not be completed since n11 automatically activates the <ins>Captcha system for security reasons.</ins> 
 
 ---
 
-<b>Versiyon Bilgisi</b>
+<b>Version Information</b>
 
-Projede kullanılan ve Case2 de bulunan driver: <i>97.0.4692.71 chromedriver</i> sürümüdür.
+The driver used in the project and included in Case2: <i>97.0.4692.71 chromedriver</i> version.
