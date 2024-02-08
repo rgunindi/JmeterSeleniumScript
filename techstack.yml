@@ -1,0 +1,537 @@
+repo_name: rgunindi/JmeterSeleniumScript
+report_id: 36478b3868048bc6333b1b719a900406
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-08T19:44:14+00:00'
+requested_by: rgunindi
+provider: github
+branch: main
+detected_tools_count: 41
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript
+  detection_source: Repo Metadata
+- name: Gherkin
+  description: A plain-text language with a simple structure
+  website_url: https://cucumber.io/docs/gherkin/reference/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/2460/default_aff27c02548fadb1b7e6f85a2b0da1c5dca5cc08.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript
+  detection_source: Repo Metadata
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript
+  detection_source: Repo Metadata
+- name: Bootstrap
+  description: Simple and flexible HTML, CSS, and JS for popular UI components and
+    interactions
+  website_url: http://getbootstrap.com/
+  version: 3.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Front-End Frameworks
+  image_url: https://img.stackshare.io/service/1101/C9QJ7V3X.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript
+  detection_source: Repo Metadata
+- name: JSHint
+  description: A Static Code Analysis Tool for JavaScript
+  website_url: http://www.jshint.com/about/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/1945/mzh2bRes_400x400.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/flot/package.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/flot/package.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: JUnit
+  description: A programmer-oriented testing framework for Java
+  website_url: http://junit.org/
+  version: 4.13.2
+  license: EPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/2020/874086.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: Logback
+  description: A logging framework for Java applications
+  website_url: https://logback.qos.ch/
+  open_source: false
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Log Management
+  image_url: https://img.stackshare.io/service/2923/05518ecaa42841e834421e9d6987b04f_400x400.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: QUnit
+  description: A JavaScript Unit Testing framework
+  website_url: http://qunitjs.com/
+  version: 1.14.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/1421/b706f022230831a3d391db504a139e21.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: RequireJS
+  description: JavaScript file and module loader
+  website_url: http://requirejs.org/
+  version: 2.1.10
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/852/1781835.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: SinonJS
+  description: Standalone test spies, stubs and mocks for JavaScript
+  website_url: http://sinonjs.org/
+  version: 1.8.1
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/3509/logo.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: Travis CI
+  description: A hosted continuous integration service for open source and private
+    projects
+  website_url: http://travis-ci.com/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/flot/.travis.yml
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/flot/.travis.yml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/flot/package.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/flot/package.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: DataTables
+  description: A plug-in for the jQuery Javascript library
+  website_url: https://datatables.net
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/5693/7730351a5c782c7e25523388bfa8e393_400x400.jpeg
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: Font Awesome
+  description: The internet's most popular icon toolkit
+  website_url: https://fontawesome.com/
+  version: 4.2.0
+  open_source: true
+  hosted_saas: false
+  category: Design
+  sub_category: Fonts
+  image_url: https://img.stackshare.io/service/3244/1_Mr1Fy00XjPGNf1Kkp_hWtw_2x.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript
+  detection_source: Repo Metadata
+- name: XSLT
+  description: The official Twitter account for the sum of all knowledge, Wikipedia.
+    Overseen by @jeffelder.
+  website_url: https://en.wikipedia.org/wiki/XSLT
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/4253/nZXfdUQq_normal.jpg
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript
+  detection_source: Repo Metadata
+- name: ch.qos.logback:logback-classic
+  description: Logback-classic module
+  version: 1.0.13
+  license: EPL-1.0,LGPL-2.1+
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+  vulnerabilities:
+  - name: QOS.ch Logback vulnerable to Deserialization of Untrusted Data
+    cve_id: CVE-2017-5929
+    cve_url: https://github.com/advisories/GHSA-vmfg-rjjm-rjrj
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 1.2.0
+  - name: logback serialization vulnerability
+    cve_id: CVE-2023-6378
+    cve_url: https://github.com/advisories/GHSA-vmq6-5m68-f53m
+    detected_date: Nov 30
+    severity: high
+    first_patched: 1.2.13
+- name: io.cucumber:cucumber-core
+  description: Cucumber for the JVM
+  version: 7.2.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: io.cucumber:cucumber-java
+  description: Cucumber for the JVM
+  version: 7.2.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: io.cucumber:cucumber-junit
+  description: Cucumber for the JVM
+  version: 7.2.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: io.cucumber:gherkin
+  description: Gherkin parser
+  version: 5.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: io.github.bonigarcia:webdrivermanager
+  description: Automatic Selenium WebDriver binaries management in runtime for Java
+  version: 5.0.3
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: junit:junit
+  description: JUnit is a unit testing framework for Java
+  version: 4.13.2
+  license: EPL-1.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: net.masterthought:cucumber-reporting
+  description: This project provides pretty html reports for Cucumber
+  version: 5.6.1
+  license: LGPL-2.1
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: net.sourceforge.cobertura:cobertura
+  description: Cobertura is a free Java tool that calculates the percentage of code
+    accessed by tests
+  version: 2.1.1
+  license: GPL-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: org.hamcrest:hamcrest-core
+  description: Core Hamcrest API - deprecated
+  version: '2.2'
+  license: DSDP
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: org.jetbrains:annotations
+  description: A set of annotations used for code inspection support and code documentation
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: org.seleniumhq.selenium:selenium-java
+  description: Selenium automates browsers
+  version: 4.1.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Maven Packages
+  image_url: https://img.stackshare.io/package/maven/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  detection_source: Case_1/n11_TalentHub_2022_Case_Test_Automation_1/pom.xml
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: bootstrap
+  description: The most popular front-end framework for developing responsive
+  package_url: http://bower.io/bootstrap
+  version: 3.3.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: bootstrap-social
+  description: 'Couple: Social Sign-In Buttons for Bootstrap'
+  package_url: http://bower.io/bootstrap-social
+  version: 4.8.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: datatables-plugins
+  description: Plug-ins for DataTables
+  package_url: http://bower.io/datatables-plugins
+  version: 1.0.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: datatables-responsive
+  description: Responsive extension for DataTables
+  package_url: http://bower.io/datatables-responsive
+  version: 1.0.3
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: flot
+  description: Attractive JavaScript charts for jQuery
+  package_url: http://bower.io/flot
+  version: 0.8.3
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: flot.tooltip
+  description: Tooltip plugin for wonderful Flot plotting library
+  package_url: http://bower.io/flot.tooltip
+  version: 0.8.4
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: metisMenu
+  description: A jQuery menu plugin
+  package_url: http://bower.io/metisMenu
+  version: 1.1.3
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: qunit
+  description: An easy-to-use JavaScript Unit Testing framework
+  package_url: http://bower.io/qunit
+  version: 1.14.0
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: requirejs
+  description: A file and module loader for JavaScript
+  package_url: http://bower.io/requirejs
+  version: 2.1.10
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: sinon
+  description: Test spies, stubs and mocks for JavaScript
+  package_url: http://bower.io/sinon
+  version: 1.8.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
+- name: sizzle
+  description: A sizzlin' hot selector engine
+  package_url: http://bower.io/sizzle
+  version: 2.1.1
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package/bower/image.png
+  detection_source_url: https://github.com/rgunindi/JmeterSeleniumScript/blob/main/Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  detection_source: Case_2/apache-jmeter-5.1.1/bin/report-template/sbadmin2-1.0.7/bower_components/jquery/bower.json
+  last_updated_by: Ramazan-xcod3r
+  last_updated_on: 2022-01-26 05:18:25.000000000 Z
